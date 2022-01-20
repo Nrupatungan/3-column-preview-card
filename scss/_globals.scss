@@ -1,0 +1,108 @@
+@import "variables";
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: $veryLightgrey;
+    position: relative;
+    main{
+        div{
+            .sedan{
+                background-color: $brightOrange;
+                padding: 45px 65px 55px 55px;
+                h1{
+                    font-size: 320%;
+                    padding: 35px 0;
+                }
+                p{
+                    padding-bottom: 90px;
+                    line-height: 1.5;
+                }
+                button{
+                    color: $brightOrange;
+                    border: 2px solid;
+                }
+                button:hover{
+                    background-color: $brightOrange;
+                    color: $veryLightgrey;
+                    border: 2px solid $veryLightgrey;
+                    cursor: pointer;
+                }
+            }
+            .suv{
+                background-color: $darkCyan;
+                padding: 45px 65px 55px 55px;
+                h1{
+                    font-size: 320%;
+                    padding:35px 0;
+                }
+                p{
+                    padding-bottom: 90px;
+                    line-height: 1.5;
+                }
+                button{
+                    color: $darkCyan;
+                    border: 2px solid;
+                }
+                button:hover{
+                    background-color: $darkCyan;
+                    color: $veryLightgrey;
+                    border: 2px solid $veryLightgrey;
+                    cursor: pointer;
+                }
+            }
+            .luxury{
+                background-color: $veryDarkCyan;
+                padding: 45px 65px 55px 55px;
+                h1{
+                    font-size: 320%;
+                    padding: 35px 0;
+                }
+                p{
+                    padding-bottom: 90px;
+                    line-height: 1.5;
+                }
+                button{
+                    color: $veryDarkCyan;
+                    border: 2px solid;
+                }
+                button:hover{
+                    background-color: $veryDarkCyan;
+                    color: $veryLightgrey;
+                    border: 2px solid $veryLightgrey;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+h1,button{
+    color: $veryLightgrey;
+}
+h1{
+    font-family: $bigShouldersDisplay;
+}
+button{
+    background-color: $veryLightgrey;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 35px;
+}
+p,button{
+    font-family: $lexendDeca;
+}
+p{
+    color: $transparentWhite;
+    width: 200px;
+}
+img{
+    height: 40px;
+    width: 70px;
+}

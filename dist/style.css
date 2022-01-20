@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/****Colors****/
+/****typogrpahy****/
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+body main div .sedan {
+  background-color: #e38826;
+  padding: 45px 65px 55px 55px;
+}
+
+body main div .sedan h1 {
+  font-size: 320%;
+  padding: 35px 0;
+}
+
+body main div .sedan p {
+  padding-bottom: 90px;
+  line-height: 1.5;
+}
+
+body main div .sedan button {
+  color: #e38826;
+  border: 2px solid;
+}
+
+body main div .sedan button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+body main div .suv {
+  background-color: #006970;
+  padding: 45px 65px 55px 55px;
+}
+
+body main div .suv h1 {
+  font-size: 320%;
+  padding: 35px 0;
+}
+
+body main div .suv p {
+  padding-bottom: 90px;
+  line-height: 1.5;
+}
+
+body main div .suv button {
+  color: #006970;
+  border: 2px solid;
+}
+
+body main div .suv button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+body main div .luxury {
+  background-color: #004241;
+  padding: 45px 65px 55px 55px;
+}
+
+body main div .luxury h1 {
+  font-size: 320%;
+  padding: 35px 0;
+}
+
+body main div .luxury p {
+  padding-bottom: 90px;
+  line-height: 1.5;
+}
+
+body main div .luxury button {
+  color: #004241;
+  border: 2px solid;
+}
+
+body main div .luxury button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+h1, button {
+  color: #f2f2f2;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 35px;
+}
+
+p, button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  width: 200px;
+}
+
+img {
+  height: 40px;
+  width: 70px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.container .sedan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.container .suv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .luxury {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/******Media layouts******/
+@media screen and (max-width: 975px) and (max-height: 1080px) {
+  .container {
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3,1fr;
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 2,1fr;
+        grid-template-rows: 2,1fr;
+  }
+  .container .sedan {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 0px;
+  }
+  .container .suv {
+    border-top-right-radius: 12px;
+  }
+  .container .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (max-width: 675px) and (max-height: 1080px) {
+  .container {
+    -webkit-transform: translate(-50%, 5%);
+            transform: translate(-50%, 5%);
+  }
+  .container .sedan {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .container .suv {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    border-top-right-radius: 0px;
+  }
+  .container .luxury {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 80px;
+  }
+}
